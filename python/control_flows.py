@@ -9,14 +9,21 @@ elif x > 0:
     print("x is positive")
 else:
     print("x is 0")
- 
-   
+
+#### ----- while statement ------
+words = ["I", "am", "learning", "python"]
+print("\nUsing while syntax")
+i=0
+while  i < len(words):
+    print(words[i])
+    i+=1
+  
 #### ----- for statement ------
 
 # it doesn't follow C, Java-style format
 
 words = ["I", "am", "learning", "python"]
-print("Using for..in syntax")
+print("\nUsing for..in syntax")
 for w in words:
     print(w)
 
