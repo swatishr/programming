@@ -25,3 +25,22 @@ list2 = []
 
 print(list1 == list2) # returns True
 print(list1 is list2) # returns False since Lists refer to two different objects
+
+
+# while and if can contain any operators, not just comparisons
+
+# in and not in : membership tests if a val is in the sequence or not
+
+# is and is not : compare whether two objects are really the same object
+
+# All comparison operators have same priority. Comparison operators < numerical operators priority
+
+# comparisons can be chained. Eg: a > b == c is valid. First tests a> b and also check b == c
+
+# Boolean operators: and, or, not. not has the highest priority amongst these. or has the lowest.
+# Boolean operators have lower priority than comparison operators
+
+# Similar to many other languages, and and or are short-circuit operators. 
+# Args evaluated from left to right and execution is stopped once the outcome is determined.
+
+

@@ -209,14 +209,3 @@ print("Cleared the whole list: ", a)
 
 del a
 print("deleting entire variable: ", a) # returns error that says name a is not defined
-
-
-
-
-### For all sequences
-
-# in operator: can be used with lists or dictionaries
-print("\nin operator with list")
-i=2
-if i in [1,2,3]:
-    print("i is in the list")
