@@ -103,7 +103,28 @@ Counter(s).values()
 ```
 
 
+# Slicing a list
+
+Slicing Python lists always creates copies. So, if you want to apply reverse on a slice of a list in-place, you can't use the reverse function, reversed, or slicing operation for reverse.
+
+
+# Integer max and min
+
+```
+import sys
+
+INT_MAX = sys.maxsize
+INT_MIN = -sys.maxsize-1
+```
+
+# Get random value from a list with equal probability:
+
+```
+random.choice(list)
+```
+
 ### Check out
+
 
 package re (for regex and pattern matching)
 string functions

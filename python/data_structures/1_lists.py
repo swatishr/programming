@@ -207,5 +207,13 @@ print("After removing item from index 2 to 4 (excluding 4): ", a)
 del a[:]
 print("Cleared the whole list: ", a)
 
-del a
-print("deleting entire variable: ", a) # returns error that says name a is not defined
+# del a
+# print("deleting entire variable: ", a) # returns error that says name a is not defined
+
+
+# mutate a default initialized list
+print("\ndefault initialization of list and then mutate")
+list1 = [0] * 10
+print(list1)
+list1[2] = 1
+print(list1)
