@@ -73,6 +73,8 @@ s = "Hello World"
 sorted_s = sorted(s)
 ```
 
+Remember that sorted function returns a list. If you want a string out of it then use `''.join(sorted(s))`
+
 
 ### Boolean operators
 
@@ -84,6 +86,15 @@ or
 ### Loops
 
 You can't use `while` to iterate over the string or a collection with this syntax: `w in words`. You must use `for`: `for w in words`
+
+
+### enumerate in Loops
+
+You can use enumerate on a list to get an <index, val> pair
+
+```
+for i, num in enumerate(nums):
+```
 
 ### How to have a counter map for string
 
@@ -121,6 +132,21 @@ INT_MIN = -sys.maxsize-1
 
 ```
 random.choice(list)
+```
+
+# Different methods to get digits out of an integer number in Python
+
+```
+while num != 0: #from RHS o LHS
+    digit = num % 10
+    print(digit)
+    num = num // 10
+```
+
+```
+for i in str(current_number): #from LHS to RHS
+    digit = int(i)
+    print(digit)
 ```
 
 ### Check out
