@@ -149,6 +149,23 @@ for i in str(current_number): #from LHS to RHS
     print(digit)
 ```
 
+# Verify if a string is an integer (It should be able to pick up negative numbers too)
+
+One way is to use isDigit function but for negative numbers, need an additional check
+
+```
+if token.isdigit() or (token[0] == '-' and token[1:].isdigit()):
+```
+
+Another way is to use try...except block while converting string into int using int() function
+
+```
+try:
+    intVal = int(str)
+except ValueError: # not a valid integer
+    # logic for non integer strings.
+```
+
 ### Check out
 
 
