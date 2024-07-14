@@ -166,6 +166,27 @@ except ValueError: # not a valid integer
     # logic for non integer strings.
 ```
 
+# How to use a variable from parent function in the nested functions
+
+I faced this issue in leetcode problems where I needed to use a global variable defined in the enclosing function.
+However, I used to get this error.
+```
+UnboundLocalError: cannot access local variable 'curr_max' where it is not associated with a value
+```
+
+This is because Python redefines the variable with that name for the inner function.
+
+In order to use the one defined in the parent, we need to use the below statement in the child/enclosed function:
+
+```
+def maxPathSum(self, root):
+    curr_max = float('-inf')
+
+    def helper(root):
+        nonlocal curr_max
+        ...
+```
+
 ### Check out
 
 
