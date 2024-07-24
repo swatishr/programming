@@ -187,6 +187,15 @@ def maxPathSum(self, root):
         ...
 ```
 
+# How to default a 2D list with zeroes or some value
+
+```
+rows = len(board)
+cols = len(board[0])
+
+visited = [[False] * cols for _ in range(rows)]
+```
+
 ### Check out
 
 
