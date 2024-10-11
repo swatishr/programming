@@ -200,5 +200,3 @@ visited = [[False] * cols for _ in range(rows)]
 
 
 package re (for regex and pattern matching)
-string functions
-self in class
